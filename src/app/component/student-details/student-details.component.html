@@ -1,0 +1,31 @@
+<div *ngIf="studentDetails">
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>FirstName</td>
+                <td>LastName</td>
+                <td>Department</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let response of studentDetails">
+                <td>
+                    {{response.id}}
+                </td>
+                <td>
+                    {{response.department}}
+                </td>
+                <td>
+                    {{response.firstname}}
+                </td>
+                <td>
+                    {{response.lastname}}
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
